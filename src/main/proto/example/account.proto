@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package example;
+
+option java_multiple_files = true;
+option java_package = "xyz.nillpoe.example.grpc.generated";
+option java_outer_classname = "AccountProto";
+
+service AccountService {
+  rpc ThrowError (ThrowErrorRequest) returns (ThrowErrorResponse);
+}
+
+message ThrowErrorRequest {
+  string message = 1;
+}
+
+message ThrowErrorResponse {
+  string message = 1;
+}

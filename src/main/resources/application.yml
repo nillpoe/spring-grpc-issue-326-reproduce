@@ -1,0 +1,12 @@
+logging:
+  level:
+    xyz.nillpoe: TRACE
+    org.springframework.grpc: TRACE
+
+spring:
+  grpc:
+    server:
+      port: 10001
+
+      ssl:
+        enabled: false
